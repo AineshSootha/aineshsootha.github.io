@@ -1,1 +1,1 @@
-This is a temporary portfolio/resume website. I am currentl working on the main website.
+This is a temporary portfolio/resume website. I am currently working on the main website.

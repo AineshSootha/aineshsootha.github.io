@@ -1,117 +1,38 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Ainesh Sootha</title>
-      <script src="dist/smooth-scrollbar.js"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>
-         var Scrollbar = window.Scrollbar;
-         
-         Scrollbar.init(document.querySelector('#my-scrollbar'), options);
-      </script>
-      <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty4KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
-      <section class="full slide" id="first">
-         <img id="bg" src="./assets/bg.jpg">
-         <div id="main">
-            <div id="logodiv">
-               <img id="logo" src="./assets/logo.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ainesh Sootha</title>
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <section class="">
+        <div id="top-image">
+            <div id="text" class="channel-split-wrapper">
+                
             </div>
-            <span class="heading" id="titles"></span><br><br>
-            <a href="assets/resume.pdf" class="heading" id="resumeLink" target="_blank"><span>Resume</span></a>
-         </div>
-      </section>
-      <section id="second"   class="tri">
-         <div class="top">
-            <span class="heading">Skills</span>
-         </div>
-         <div id="allskills">
-            <div class="skill">
-               <i class="fas fa-code fa-4x"></i><br>
-               <span class="skilltext">Software Development</span>
-               <p class="skillexp">C++, Python</p>
-            </div>
-            <div class="skill">
-               <i class="fas fa-window-maximize fa-4x"></i><br>
-               <span class="skilltext">Web Design/Dev</span>
-               <p class="skillexp">HTML5, CSS3, JS, React, php, Django</p>
-            </div>
-            <div class="skill">
-               <i class="fas fa-palette fa-4x"></i><br>
-               <span class="skilltext">Graphic Design</span>
-               <p class="skillexp">GIMP, PS</p>
-            </div>
-         </div>
-      </section>
-      <section id="third" class="full">
-         <div id="projHeadDiv">
-            <span class="heading" id="projHead">Projects + Achievements</span>
-         </div>
-         <div id="projects-1 container-fluid">
-            <div class="row">
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">Collegely</span>
-                  </div>
-                  <div class="projdate">MAR 2018 - JUL 2018
-                  </div>
-                  <div class="projbody">o Collegely was a website that allowed international students connect with alumni
-                     of the college of their choice.<br>
-                     o Developed the idea, designed, developed the website
-                  </div>
-                  <div class="projweb"><a href="https://github.com/AineshSootha/collegely" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
-                  </div>
-               </div>
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">Youth!ndia</span>
-                  </div>
-                  <div class="projdate">DEC 2017 - MAR 2018
-                  </div>
-                  <div class="projbody">o Youth!ndia is a youth driven news and forum platform.<br>
-                     o Developed the idea, designed, developed the complete platform.
-                  </div>
-                  <div class="projweb"><a href="https://github.com/AineshSootha/youthindia" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
-                  </div>
-               </div>
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">CCEXTRACTOR DEMO</span>
-                  </div>
-                  <div class="projdate">DEC 2017 - MAR 2018
-                  </div>
-                  <div class="projbody">o Designed a website for the demo of CCExtractor as a project
-                     for GoogleCodein - 2018.
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">GRAPHIC DESIGN</span></div>
-                  <div class="projdate">APR 2015 - PRESENT
-                  </div>
-                  <div class="projbody">o Designed logos for multiple companies like TZS marketing, Red Hen Labs, FOSSASIA<br>
-                     o Check out my portfolio&nbsp<a href="https://ainesh.pb.gallery/" target="_blank"><strong>Here</strong></a>
-                  </div>
-               </div>
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">Other Achievements</span></div>
-                  <div class="projdate">Ongoing</div>
-                  <div class="projbody">o Breakthrough Junior Challenge - Top 5%<br>
-                     o Google Codein - 9 Tasks completed<br>
-                     o Aeon'17 : Ranked Top 10
-                  </div>
-               </div>
-               <div class = "project">
-                  <div class="projtitle"><span class="projname">That's not all</span></div>
-                  <div class="projbody" id="resume">To learn more about my current and past experiences, check out my <a href="assets/resume.pdf" target="_blank"><strong>Resume</strong></a><br>
-                  </div>
-               </div>
-            </div>
-         </div>
-         
-         
-      </section>
-   </body>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            var movementStrength = 25;
+            var height = movementStrength / $(window).height();
+            var width = movementStrength / $(window).width();
+            $("#top-image").mousemove(function(e){
+                var pageX = e.pageX - ($(window).width() / 2);
+                var pageY = e.pageY - ($(window).height() / 2);
+                var newvalueX = width * pageX * -1 - 25;
+                var newvalueY = height * pageY * -1 - 50;
+                $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+            });
+        });
+    </script>
+</body>
 </html>

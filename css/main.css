@@ -1,80 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:900&display=swap');
-
-body {
-   font-family: 'Poppins', sans-serif;
-   background-color: #000;
-   cursor: url(../img/cursor.png) 2 2, auto;
-}
-h1{
-   font-family: 'Alegreya', serif;
-   font-weight:900;
-   font-style:italic;
-   font-size:80px!important;
-}
-h2{
-   font-family: 'Alegreya',serif;
-   font-weight: 800;
-   font-size:30px!important;
-}
-a{
-   text-decoration:none!important;
-   color:#fff!important ;
-}
-#maintext{
-   color:#fff!important;
-   text-align:center;
-   height: 100vh;
-   padding-top:65vh;
-}
-#first{
-   height:100vh;
-   z-index:1;
-}
-#second{
-   height:100vh;
-   z-index:2;
-   background-color:#fff;
-}
-#top-image {
-   background-image: url(../img/bgweb.png);
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size:cover;
-   
-   top:0;
-   width:100%;
-   z-index:0;
-   height:100%;
-   background-size: calc(100% + 50px);
-}
-@media (max-width: 500px) {
-   #top-image {
-      background-image: url(../img/bgmobile.png);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position:center center;
-   }
+@font-face {
+    font-family: 'signature';
+    src: url('BrothersideSignature.otf');
 }
 
-@media (max-width:1200px) and (min-width:501px) {
-   #top-image {
-      background-image: url(../img/bgnametab.png);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position:center center;
-   }
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+#first {
+    background-color: #000;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.heading{
-   text-align: center;
+
+.name-div {
+    margin: auto;
+    text-align: center;
 }
-.row{
-   text-align:center;
+
+.name {
+    font-family: 'signature';
+    font-size: 15em;
+    display: inline-block;
+    line-height: 1.4em;
+    color: #fff;
 }
-.projectimg{
-   max-width:100%;
+
+.stuff {
+    color: #fff;
+    font-size: 2.5em;
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    margin-top: 0;
 }
-#resume{
-   margin-top:5px;
+
+.links {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 2.3em;
+    color: #fff;
+}
+
+.link {
+    margin: 30px;
 }

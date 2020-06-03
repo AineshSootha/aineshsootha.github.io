@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'signature';
+    src: url('BrothersideSignature.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+#first {
+    background-color: #000;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-div {
+    margin: auto;
+    text-align: center;
+}
+
+.name {
+    font-family: 'signature';
+    font-size: 15em;
+    display: inline-block;
+    line-height: 1.4em;
+    color: #fff;
+}
+
+.stuff {
+    color: #fff;
+    font-size: 2.5em;
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    margin-top: 0;
+}
+
+.links {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 2.3em;
+    color: #fff;
+}
+
+.link {
+    margin: 30px;
+}

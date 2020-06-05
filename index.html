@@ -16,10 +16,10 @@
 <body>
     <div id="container">
         <section class="header">
-            <span id='header'>Ainesh Sootha</span>
+            <span id='header'>Ainesh <span id="black">Sootha</span></span>
         </section>
         <section class="child" id="first">
-            <div class="links"><i class="far fa-file link"></i>&nbsp;&nbsp;<a href="http://linkedin.com/in/aineshsootha/"><i class="fab fa-linkedin link"></i></a></div>
+            <div id="links" class="links"><i class="far fa-file link"></i>&nbsp;&nbsp;<a href="http://linkedin.com/in/aineshsootha/"><i class="fab fa-linkedin link"></i></a></div>
             <div class="name-div">
                 <div class="headName">
                     <span class="name">Ainesh Sootha</span><br>
@@ -36,8 +36,10 @@
             </div>
         </section>
         <section class="child" id="projects">
-            <div class="school">
+            <div class="workHead">
                 <span class="stuff work"><strong>W O R K</strong></span>
+            </div>
+            <div class="workDiv">
 
             </div>
         </section>
@@ -51,10 +53,19 @@
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 $('#header').addClass('scrolled');
 
+
             } else {
                 $('#header').removeClass('scrolled');
 
+
             };
+            if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                $('#black').addClass('nowBlack');
+                $('#links').addClass('nowBlack');
+            } else {
+                $('#black').removeClass('nowBlack');
+                $('#links').removeClass('nowBlack');
+            }
         });
     });
 </script>

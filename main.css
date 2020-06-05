@@ -3,12 +3,45 @@
     src: url('BrothersideSignature.otf');
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+html {
+    overflow-y: scroll;
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
 #first {
     background-color: #000;
     height: 98vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#education {
+    background-color: #000;
+    height: 49vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    align-items: center;
+}
+
+#projects {
+    background-color: #000;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
     align-items: center;
 }
 
@@ -34,7 +67,7 @@
 }
 
 .links {
-    position: absolute;
+    position: fixed;
     right: 5%;
     top: 5%;
     font-size: 2.3em;
@@ -43,4 +76,40 @@
 
 .link {
     margin: 30px;
+}
+
+#purdue {
+    height: 150px;
+}
+
+.school {
+    text-align: center;
+}
+
+.student {
+    font-size: 2em;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    top: 0;
+    background-color: #000;
+}
+
+#header {
+    font-family: 'signature';
+    display: none;
+}
+
+.scrolled {
+    position: fixed;
+    display: block!important;
+    font-size: 5em;
+    top: 5vh;
+    margin: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    transition: 0.2s;
 }

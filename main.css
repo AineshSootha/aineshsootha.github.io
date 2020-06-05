@@ -5,7 +5,7 @@
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: inherit;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
@@ -86,6 +86,19 @@ html {
     text-align: center;
 }
 
+.workHead {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+
+.workDiv {
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+}
+
 .student {
     font-size: 2em;
 }
@@ -112,4 +125,8 @@ html {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     transition: 0.2s;
+}
+
+.nowBlack {
+    color: #000;
 }

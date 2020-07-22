@@ -3,6 +3,11 @@
     src: url('BrothersideSignature.otf');
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-black.ttf');
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -90,13 +95,16 @@ html {
     width: 50%;
     height: 100%;
     text-align: center;
-    display: block;
+    display: flex;
+    margin: auto;
+    align-items: center;
 }
 
 .workDiv {
     background-color: #fff;
     width: 50%;
     height: 100%;
+    text-align: center;
 }
 
 .student {
@@ -129,4 +137,47 @@ html {
 
 .nowBlack {
     color: #000;
+}
+
+.work {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.mockup {
+    height: 90%;
+}
+
+.workDiv {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceBox {
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px #ccc;
+}
+
+.experienceImg {
+    height: 300px;
+}
+
+.experienceText {
+    margin-top: 10px;
+}
+
+.experienceHead {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+.experienceDesc {
+    margin-top: 10px;
 }

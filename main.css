@@ -43,7 +43,7 @@ html {
 
 #projects {
     background-color: #000;
-    height: 98vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     margin-top: 1vh;
@@ -160,13 +160,15 @@ html {
 }
 
 .experienceBox {
+    display: none;
     width: 70%;
     border: 1px solid #ccc;
     box-shadow: 2px 2px #ccc;
 }
 
 .experienceImg {
-    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .experienceText {
@@ -180,4 +182,17 @@ html {
 
 .experienceDesc {
     margin-top: 10px;
+    font-family: 'Poiret One', cursive;
+}
+
+.left-button {
+    position: absolute!important;
+    top: auto!important;
+    left: 0!important;
+}
+
+.right-button {
+    position: absolute!important;
+    top: auto!important;
+    left: auto!important;
 }

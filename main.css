@@ -45,6 +45,8 @@ h1 {
     font-size: 30px;
     color: #fff;
     margin-bottom: 12px;
+    text-decoration: underline;
+    text-decoration-color: rgb(211, 0, 0);
 }
 
 h3 {
@@ -68,6 +70,7 @@ a {
 a:hover {
     color: rgb(211, 0, 0);
     text-decoration: underline;
+    text-decoration-color: rgb(211, 0, 0);
 }
 
 p {

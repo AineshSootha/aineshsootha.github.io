@@ -20,23 +20,16 @@ body {
     padding: 64px 24px;
 }
 
-.section {
+.part {
     padding-bottom: 48px;
     margin-bottom: 48px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.section:last-of-type {
+.part:last-of-type {
     border-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;
-}
-
-.me {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    margin-bottom: 12px;
 }
 
 h1 {
@@ -44,56 +37,4 @@ h1 {
     font-size: 24px;
     color: #FFFFFF;
     margin-bottom: 12px;
-}
-
-h2 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 16px;
-}
-
-.link {
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-    margin-right: 12px;
-}
-
-.links .link {
-    margin-right: 0;
-    display: block;
-    margin-bottom: 16px;
-}
-
-h6 {
-    font-weight: 600;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.64);
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-h3 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-bottom: 6px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-ul li {
-    margin-bottom: 32px;
-}
-
-ul li:last-of-type {
-    margin-bottom: 0;
 }

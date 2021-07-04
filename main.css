@@ -70,7 +70,7 @@ a {
 a:hover {
     color: rgb(211, 0, 0);
     text-decoration: underline;
-    text-decoration-color: rgb(211, 0, 0);
+    text-decoration-color: #fff;
 }
 
 p {

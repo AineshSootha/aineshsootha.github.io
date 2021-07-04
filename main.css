@@ -1,198 +1,99 @@
-@font-face {
-    font-family: 'signature';
-    src: url('BrothersideSignature.otf');
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url('Roboto-black.ttf');
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 html {
-    overflow-y: scroll;
+    font-family: 'Inter', sans-serif;
 }
 
- ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-    /* make scrollbar transparent */
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
-#first {
-    background-color: #000;
-    height: 98vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    background: #000;
+    -webkit-font-smoothing: antialiased;
 }
 
-#education {
-    background-color: #000;
-    height: 49vh;
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;
-    align-items: center;
+#container {
+    max-width: 512px;
+    margin: 0 auto;
+    padding: 64px 24px;
 }
 
-#projects {
-    background-color: #000;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;
-    align-items: center;
+.section {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.name-div {
-    margin: auto;
-    text-align: center;
+.section:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.name {
-    font-family: 'signature';
-    font-size: 15em;
-    display: inline-block;
-    line-height: 1.4em;
-    color: #fff;
+.me {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-bottom: 12px;
 }
 
-.stuff {
-    color: #fff;
-    font-size: 2.5em;
-    display: inline-block;
-    font-family: 'Poiret One', cursive;
-    margin-top: 0;
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
 }
 
-.links {
-    position: fixed;
-    right: 5%;
-    top: 5%;
-    font-size: 2.3em;
-    color: #fff;
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
 }
 
 .link {
-    margin: 30px;
-}
-
-#purdue {
-    height: 150px;
-}
-
-.school {
-    text-align: center;
-}
-
-.workHead {
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.workDiv {
-    background-color: #fff;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-}
-
-.student {
-    font-size: 2em;
-}
-
-.header {
-    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
     color: #fff;
-    top: 0;
-    background-color: #000;
+    margin-right: 12px;
 }
 
-#header {
-    font-family: 'signature';
-    display: none;
+.links .link {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 16px;
 }
 
-.scrolled {
-    position: fixed;
-    display: block!important;
-    font-size: 5em;
-    top: 5vh;
-    margin: auto;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    transition: 0.2s;
+h6 {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.64);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.nowBlack {
-    color: #000;
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 6px;
 }
 
-.work {
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.mockup {
-    height: 90%;
+ul li {
+    margin-bottom: 32px;
 }
 
-.workDiv {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.experienceBox {
-    display: none;
-    width: 70%;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px #ccc;
-}
-
-.experienceImg {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.experienceText {
-    margin-top: 10px;
-}
-
-.experienceHead {
-    font-family: 'Poiret One', cursive;
-    font-size: 1.5em;
-}
-
-.experienceDesc {
-    margin-top: 10px;
-    font-family: 'Poiret One', cursive;
-}
-
-.left-button {
-    position: absolute!important;
-    top: auto!important;
-    left: 0!important;
-}
-
-.right-button {
-    position: absolute!important;
-    top: auto!important;
-    left: auto!important;
+ul li:last-of-type {
+    margin-bottom: 0;
 }

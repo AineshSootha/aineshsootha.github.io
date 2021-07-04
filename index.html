@@ -3,144 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ainesh Sootha</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://kit.fontawesome.com/9027bc6f96.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-    </style>
+    <title>Ainesh</title>
 </head>
 
 <body>
     <div id="container">
-        <section class="header">
-            <span id='header'>Ainesh <span id="black">Sootha</span></span>
-        </section>
-        <section class="child" id="first">
-            <div id="links" class="links">
-                <a href="assets/AineshSootha_Resume.pdf" target="_blank">
-                    <i class="far fa-file link"></i>
-                </a>
-                &nbsp;&nbsp;
-                <a href="http://linkedin.com/in/aineshsootha/" target="_blank">
-                    <i class="fab fa-linkedin link"></i>
-                </a>
-            </div>
-            <div class="name-div">
-                <div class="headName">
-                    <span class="name">Ainesh Sootha</span><br>
-                </div>
-                <span class="stuff">SOFTWARE DEVELOPER</span>
-            </div>
-        </section>
-        <section class="child" id="education">
-            <div class="school">
-                <img id="purdue" src="./assets/purdue.png">
-                <br><br>
-                <span class="stuff student">Computer Engineering student at Purdue University</span>
+        <div class="part">
+            <img src="images/me.png">
+            <h1>Ainesh Sootha</h1>
+            <a href="github.com/aineshsootha">Github</a>
+            <a href="linkedin.com/in/aineshsootha">LinkedIn</a>
+            <a href="twitter.com/uhneshh"></a>
+        </div>
+        <div class="part">
 
-            </div>
-        </section>
-        <section class="child" id="projects">
-            <div class="workHead">
-                <span class="stuff work"><strong>W O R K<br>+<br>P R O J E C T S</strong></span>
-            </div>
-            <div class="workDiv">
-                <div class="experienceBox">
-                    <div class="experienceImgdiv">
-                        <div>
-                            <img class="experienceImg" src="assets/viasat.png">
-                        </div>
-                    </div>
-                    <div class="experienceText">
-                        <span class="experienceHead">Software Engineering / Data Science</span>
-                        <br>
-                        <span class="experienceDesc">Working with Kafka</span>
-                    </div>
-                </div>
-                <div class="experienceBox">
-                    <div class="experienceImgdiv">
-                        <div>
-                            <img class="experienceImg" src="assets/hfh2.png">
-                        </div>
-                    </div>
-                    <div class="experienceText">
-                        <span class="experienceHead">Habitat for Humanity Web App</span>
-                        <br>
-                        <span class="experienceDesc">Developed an inventory management/tracking web-app for Habitat for Humanity</span>
-                    </div>
-                </div>
-                <div class="experienceBox">
-                    <div class="experienceImgdiv">
-                        <div>
-                            <img class="experienceImg" src="assets/rec.png">
-                        </div>
-                    </div>
-                    <div class="experienceText">
-                        <span class="experienceHead">Books + Movie Recommender</span>
-                        <br>
-                        <span class="experienceDesc">Books and Movies Recommendation system using Cosine Similarity</span>
-                    </div>
-                </div>
-
-                <button class="w3-button w3-black w3-display-right right-button" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-
-
-        </section>
+        </div>
     </div>
+
 </body>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("experienceBox");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-    }
-</script>
-<script>
-    $(document).ready(function() {
-
-        $(window).scroll(function() {
-
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                $('#header').addClass('scrolled');
-
-
-            } else {
-                $('#header').removeClass('scrolled');
-
-
-            };
-            if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
-                $('#black').addClass('nowBlack');
-                $('#links').addClass('nowBlack');
-            } else {
-                $('#black').removeClass('nowBlack');
-                $('#links').removeClass('nowBlack');
-            }
-        });
-    });
-</script>
 
 </html>

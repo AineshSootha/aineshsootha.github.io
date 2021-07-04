@@ -9,6 +9,14 @@ html {
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 body {
     background: #000;
     -webkit-font-smoothing: antialiased;
@@ -34,7 +42,11 @@ body {
 
 h1 {
     font-weight: 600;
-    font-size: 24px;
-    color: #FFFFFF;
+    font-size: 30px;
+    color: #fff;
     margin-bottom: 12px;
+}
+
+a {
+    color: #fff;
 }

@@ -47,6 +47,34 @@ h1 {
     margin-bottom: 12px;
 }
 
+h3 {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(100, 92, 92);
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(211, 0, 0);
+    margin-bottom: 12px;
+}
+
 a {
     color: #fff;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+ul li {
+    margin-bottom: 32px;
+}
+
+ul li:last-of-type {
+    margin-bottom: 0;
 }

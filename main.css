@@ -79,6 +79,12 @@ p {
     color: #fff;
 }
 
+small {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(211, 100, 100);
+}
+
 ul li {
     margin-bottom: 32px;
 }

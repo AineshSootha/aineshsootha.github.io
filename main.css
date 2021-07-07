@@ -93,6 +93,10 @@ small {
     color: #FF4D4D;
 }
 
+.langs {
+    color: rgb(100, 92, 92);
+}
+
 ul li {
     margin-bottom: 32px;
 }

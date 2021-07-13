@@ -130,7 +130,7 @@ ul li:last-of-type {
     box-shadow: 15px 15px #000;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 512px) {
     .ss {
         display: block;
         text-align: center;

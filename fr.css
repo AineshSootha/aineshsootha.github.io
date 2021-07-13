@@ -130,8 +130,12 @@ ul li:last-of-type {
     box-shadow: 15px 15px #000;
 }
 
-@media screen and (max-width: 320px) {
-    .iosSS {
+@media screen and (max-width: 380px) {
+    .ss {
         display: block;
+        text-align: center;
+    }
+    .iosSS {
+        margin-bottom: 24px;
     }
 }

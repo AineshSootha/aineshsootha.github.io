@@ -1,6 +1,11 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter var', sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
@@ -18,20 +23,21 @@ html {
 }
 
 body {
-    background: #000;
+    background: #5E2320;
     -webkit-font-smoothing: antialiased;
 }
 
 #container {
-    max-width: 512px;
+    /* max-width: 1024px; */
     margin: 0 auto;
-    padding: 64px 24px;
+    padding: 64px 64px;
+    z-index: 2;
 }
 
 .part {
     padding-bottom: 48px;
     margin-bottom: 48px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid #FFD275;
 }
 
 .part:last-of-type {
@@ -40,66 +46,91 @@ body {
     margin-bottom: 0;
 }
 
-.myImg {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: 2px solid rgb(211, 0, 0);
-    margin-bottom: 12px;
+.sides {
+    display: flex;
 }
 
+.sidehead {
+    padding-right: 64px;
+    width: 180px;
+}
+
+
 h1 {
+    font-family: "Instrument Serif", serif;
+    color: #FFD275;
     font-weight: 600;
-    font-size: 30px;
-    color: #fff;
+    font-size: 100px;
     margin-bottom: 12px;
-    text-decoration: underline;
-    text-decoration-color: rgb(211, 0, 0);
+    /* text-decoration: underline; */
+    text-decoration-color: #BAC1B8;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 15px;
-    color: rgb(100, 92, 92);
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #FFD275;
     margin-bottom: 12px;
 }
 
 h2 {
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 12px;
+    font-family: 'Inter var', sans-serif;
+    /* font-family: "Playfair Display", serif; */
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #FFD275;
+    /* margin-bottom: 8px; */
 }
 
 a {
     color: inherit;
 }
 
+.links {
+    font-family: 'Inter var', sans-serif;
+}
+
+img {
+    filter: invert(1);
+    max-width: 180px;
+}
+
+.bg-img {
+    z-index: 1;
+    position: absolute;
+}
+
 a:hover {
-    color: rgb(211, 0, 0);
-    text-decoration: underline;
-    text-decoration-color: #fff;
+    color: #E7E6F7;
+    text-decoration-color: #E7E6F7;
 }
 
 p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
+    font-size: 33px;
+    line-height: 33px;
+    color: #ffe8ba;
+    font-family: "Instrument Serif", serif;
+    letter-spacing: .03rem;
+}
+
+.desc {
+
+    /* font-size: 33px; */
 }
 
 small {
     font-size: 15px;
     line-height: 24px;
-    color: #FF4D4D;
+    color: #ffe8ba;
 }
 
 strong {
     color: #FF4D4D;
 }
 
-.langs {
-    color: rgb(100, 92, 92);
-}
 
 ul li {
     margin-bottom: 32px;

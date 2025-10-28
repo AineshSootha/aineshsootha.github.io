@@ -1,18 +1,5 @@
-@import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-html {
-    font-family: 'Inter var', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Inter var', sans-serif;
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 * {
     margin: 0;
@@ -22,120 +9,123 @@ html {
     box-sizing: border-box;
 }
 
+html {
+    font-family: "Instrument Serif", serif;
+}
+
 body {
-    background: #5E2320;
+    background: #F9F9F9;
     -webkit-font-smoothing: antialiased;
+    padding: 30px 20px;
 }
 
 #container {
-    /* max-width: 1024px; */
+    max-width: 700px;
     margin: 0 auto;
-    padding: 64px 64px;
-    z-index: 2;
 }
 
-.part {
-    padding-bottom: 48px;
-    margin-bottom: 48px;
-    border-bottom: 1px solid #FFD275;
+header {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #32292F;
 }
-
-.part:last-of-type {
-    border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.sides {
-    display: flex;
-}
-
-.sidehead {
-    padding-right: 64px;
-    width: 180px;
-}
-
 
 h1 {
-    font-family: "Instrument Serif", serif;
-    color: #FFD275;
-    font-weight: 600;
-    font-size: 100px;
+    color: #F9F9F9;
+    text-shadow: -3px 3px #3E7CB1, -5px 5px #D65108, -7px 7px #EFA00B;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.2;
     margin-bottom: 12px;
-    /* text-decoration: underline; */
-    text-decoration-color: #BAC1B8;
+    padding: 12px 16px;
+    background-color: #32292F;
+    display: inline-block;
+}
+
+.links {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+.links a {
+    padding: 6px 10px;
+    display: inline-block;
 }
 
 h3 {
-    font-family: "Instrument Serif", serif;
+    font-family: "Yeseva One", serif;
+    text-shadow: -2px 2px #3E7CB1, -3px 3px #D65108, -4px 4px #EFA00B;
     font-weight: 400;
-    font-size: 45px;
-    color: #FFD275;
-    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #F9F9F9;
+    background-color: #32292F;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    display: inline-block;
 }
 
 h2 {
-    font-family: 'Inter var', sans-serif;
-    /* font-family: "Playfair Display", serif; */
-    /* font-optical-sizing: auto; */
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    color: #FFD275;
-    /* margin-bottom: 8px; */
+    font-family: "Instrument Serif", serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #32292F;
+    margin-bottom: 4px;
+}
+
+h2 a {
+    padding: 0;
 }
 
 a {
     color: inherit;
-}
-
-.links {
-    font-family: 'Inter var', sans-serif;
-}
-
-img {
-    filter: invert(1);
-    max-width: 180px;
-}
-
-.bg-img {
-    z-index: 1;
-    position: absolute;
+    padding: 4px 8px;
+    transition: all 0.15s ease;
 }
 
 a:hover {
-    color: #E7E6F7;
-    text-decoration-color: #E7E6F7;
+    color: #F9F9F9;
+    background-color: #32292F;
+    text-shadow: -1px 1px #EFA00B, -1.5px 1.5px #D65108, -2px 2px #3E7CB1;
 }
 
 p {
-    font-size: 33px;
-    line-height: 33px;
-    color: #ffe8ba;
-    font-family: "Instrument Serif", serif;
-    letter-spacing: .03rem;
-}
-
-.desc {
-
-    /* font-size: 33px; */
+    font-size: 17px;
+    line-height: 1.5;
+    color: #32292F;
+    margin-bottom: 4px;
 }
 
 small {
     font-size: 15px;
-    line-height: 24px;
-    color: #ffe8ba;
+    line-height: 1.6;
+    color: #666;
 }
 
-strong {
-    color: #FF4D4D;
+.part {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #32292F;
 }
 
+.part:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
 
 ul li {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 
 ul li:last-of-type {
     margin-bottom: 0;
+}
+
+.date {
+    color: #666;
+    font-weight: 400;
 }
